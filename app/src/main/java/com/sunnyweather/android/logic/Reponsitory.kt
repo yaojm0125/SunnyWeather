@@ -12,11 +12,12 @@ object Reponsitory {
 
             val placeResponse = SunnyWeatherNetwork.searchPlace(query)
 
-            if (placeResponse.statue == "ok") {
-                val places = placeResponse.place
+            if (placeResponse.status == "ok") {
+                val places = placeResponse.places
+
                 Result.success(places)
             } else {
-                Result.failure(RuntimeException("response status is ${placeResponse.statue}"))
+                Result.failure(RuntimeException("response status is ${placeResponse.status}"))
             }
 
         } catch (e: Exception) {

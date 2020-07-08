@@ -9,7 +9,7 @@ class SunnyWeatherApplication : Application() {
         @SuppressLint("StaticFieldLeak")
         lateinit var context: Context
 
-        const val TOKEN = "彩云天气申请到的命令牌"
+        const val TOKEN = "d0BQcVwjfFAIlybZ"
 
     }
 
